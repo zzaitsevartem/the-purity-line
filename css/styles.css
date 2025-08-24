@@ -796,11 +796,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   transition: background-color 0.3s;
   text-transform: uppercase;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+  gap: 0;
+}
+
+.submit-btn span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.submit-btn svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px; 
 }
 
 .submit-btn:hover {
