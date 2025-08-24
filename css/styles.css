@@ -218,7 +218,7 @@ body {
 
 .content-title p {
     font-size: 56px;
-    font-weight: bold;
+    font-weight: 500;
     color: #000000;
     font-family: 'Inter', sans-serif;
 }
@@ -246,6 +246,11 @@ body {
     display: flex;
     align-items: center;
     min-height: 200px;
+    margin-bottom: 40px; 
+}
+
+.advantage-item:last-child {
+    margin-bottom: 0; 
 }
 
 .advantage-dot {
@@ -309,7 +314,7 @@ body {
     font-size: 20px;
     font-family: 'Inter', sans-serif;
     color: #000000;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
     line-height: 1.2;
     display: block;
@@ -347,11 +352,12 @@ body {
 }
 
 .outsourcing-title h1 {
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     font-size: 56px;
     letter-spacing: 1px;
     margin: 0;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .outsourcing-content {
@@ -390,10 +396,9 @@ body {
     font-size: 20px;
     line-height: 1.2;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 .outsourcing-image {
@@ -439,7 +444,7 @@ body {
         margin: 40px auto;
         font-size: 56px;
         text-align: center;
-        font-weight: bold;
+        font-weight: 500;
         font-family: 'Inter', sans-serif;
         color: #000000;
         text-transform: uppercase;
@@ -569,7 +574,7 @@ body {
         margin: 40px auto;
         font-size: 56px;
         text-align: center;
-        font-weight: bold;
+        font-weight: 500;
         font-family: 'Inter', sans-serif;
         color: #000000;
         text-transform: uppercase;
@@ -702,65 +707,104 @@ body {
   display: none;
   position: fixed;
   z-index: 2000;
-  left: 0; top: 0;
-  width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.6);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #151515E5;
 }
 
 .modal-order {
   display: none;
   position: fixed;
   z-index: 2100;
-  left: 50%; top: 50%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
-  min-width: 320px;
-  max-width: 90vw;
-  padding: 32px 24px;
-  border-radius: 16px;
+  background: #FBF9F5;
+  width: 1106px;
+  padding: 60px 80px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   font-family: 'Inter', sans-serif;
 }
 
-.modal-header, .modal-footer {
-  position: absolute;
-  left: 24px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #619CE9;
+.modal-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
   text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
 }
 
-.modal-header {
-  top: 16px;
+.modal-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #CACACA;
+  margin-bottom: 60px;
 }
 
-.modal-footer {
-  bottom: 16px;
-}
-
-.modal-content {
+.input-group {
+  margin-bottom: 40px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 120px;
-  margin: 48px 0 48px 0;
 }
 
-.modal-content label {
-  font-size: 20px;
-  color: #222;
-  margin-bottom: 12px;
-}
-
-.modal-content input {
-  font-size: 20px;
-  padding: 8px 16px;
-  border: 1px solid #619CE9;
-  border-radius: 8px;
-  width: 220px;
+.input-field {
+  width: 652px;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  font-size: 28px;
+  background: transparent;
+  outline: none;
   text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.input-field::placeholder {
+  color: #CACACA;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.submit-btn {
+  background-color: #619CE9;
+  color: white;
+  border: none;
+  width: 652px;
+  height: 50px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.submit-btn:hover {
+  background-color: #4a85d3;
 }
 
 .header .right-number a {
