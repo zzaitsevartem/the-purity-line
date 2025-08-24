@@ -1,0 +1,600 @@
+@media (min-width: 822px) {
+  .mobile-button,
+  .services-button {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1318px) {
+    html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+    
+  .header,
+  .hero,
+  .services,
+  .video-container,
+  .outsourcing,
+  .contacts {
+    width: 100vw;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .contacts-button {
+    bottom: auto;
+  }
+
+  .header {
+    margin-bottom: 56px;
+    margin-top: 19px;
+  }
+
+ 
+  .content .advantages-line,
+  .content .advantage-dot,
+  .outsourcing {
+    display: none;
+  }
+
+  .hero-img {
+    width: 100vw;
+    padding: 0 30px;
+  }
+
+  .hero-text {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .hero-title {
+    font-size: 72px;
+    height: fit-content;
+  }
+
+  svg {
+    position: absolute;
+    right: 5%;
+  }
+
+  .services svg {
+    right: 5%;
+    top: 30%;
+  }
+
+  .service {
+    font-size: 48px;
+  }
+
+  .nav-list {
+    font-size: 16px;
+  }
+
+  .content-title p {
+    font-size: 36px;
+  }
+
+  .contacts-title,
+  .contacts-title p {
+    width: 100vw;
+  }
+
+  .contacts-title p {
+    font-size: 36px;
+    margin: 20px 0 60px 0;
+  }
+
+  .contacts-info,
+  .windowcleanhero,
+  .advantage-image,
+  .advantage-image img,
+  .content {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .advantage-content {
+    margin-left: 0;
+    width: 100vw;
+  }
+
+  .advantages-container {
+    padding: 0 30px;
+  }
+
+  .advantage-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .advantage-image {
+    margin-top: 40px;
+  }
+
+  .advantage-text {
+    max-width: 550px;
+  }
+
+  .partners-title,
+  .partners-title p {
+    width: 100%;
+  }
+
+  .partners-carousel {
+    width: 100vw;
+  }
+
+  .partners-title p {
+    font-size: 36px;
+  }
+
+  .contacts-info {
+    margin-top: 0;
+  }
+
+  .footer {
+    height: fit-content;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 30px;
+    & a {
+     font-size: 16px;
+    }
+  }
+
+  .left-side {
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-contacts {
+    margin-bottom: 129px;
+    & p {
+      font-size: 24px;
+    }
+  }
+
+  .footer-privacy a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 822px) and (max-width: 1025px) {
+  .mobile-button {
+    display: none !important;
+  }
+  .hero-label svg {
+    cursor: pointer;
+  }
+  .video-title {
+    width: 100%;
+  }
+
+  .hero-title p {
+    font-size: 54px;
+  }
+
+  .services svg {
+    top: 20%;
+  }
+
+  .windowcleanhero {
+    max-height: 490px;
+    min-height: 400px;
+    height: auto;
+  }
+
+  .dropdown-content {
+    width: 80%;
+  }
+
+  .contacts-info .info-p {
+    font-size: 38px;
+  }
+}
+
+@media (max-width:821px) {
+  .dropdown-content {
+    width: 100%;
+  }
+  .hero-label svg {
+    display: none !important;
+  }
+  .mobile-button {
+    cursor: pointer;
+  }
+  .mobile-overlay {
+    display: none;
+    position: fixed;
+    z-index: 998;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    transition: opacity 0.3s;
+  }
+  .mobile-overlay.active {
+    display: block;
+    opacity: 1;
+  }
+  .mobile-side-menu {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; right: 0;
+    width: 80vw;
+    max-width: 320px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.15);
+    padding: 40px 24px;
+    flex-direction: column;
+    gap: 32px;
+    transition: transform 0.3s;
+    transform: translateX(100%);
+  }
+  .mobile-side-menu.active {
+    display: flex;
+    transform: translateX(0);
+  }
+  .mobile-side-menu .nav-list {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    display: flex;
+  }
+  .mobile-side-menu .nav-list a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .mobile-side-menu .right-number {
+    margin-top: 32px;
+    font-size: 16px;
+    color: #619CE9;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+  .hero-label svg,
+  .services svg,
+  .contacts-button {
+    display: none;
+  }
+
+   .services .arrow svg {
+    display: inline-block !important;
+    position: unset;
+    width: 12px;
+    height: 12px;
+  }
+
+  .nav-list, .right-number {
+    display: none;
+  }
+
+  .mobile-side-menu .nav-list,
+  .mobile-side-menu .right-number {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 6px 0px rgba(236, 236, 236, 0.2);
+    border-radius: 16px;
+    & svg {
+      position: static;
+      margin: 0;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .hero-title {
+    width: 100%;
+      & p {
+      font-size: 7.3vw;
+    }
+  }
+
+  .hero {
+    gap: 20px;
+  }
+
+  .windowcleanhero {
+    height: 30vh;
+  }
+
+  .hero-img {
+    margin-bottom: 0;
+  }
+
+  .mobile-button {
+    display: flex;
+    width: 100%;
+    background-color: #619CE9;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    & p {
+      font-size: 20px;
+      font-family: 'Inter';
+      color: #FFFFFF;
+      margin-right: 4px;
+    }
+    & svg {
+      position: unset;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .services-button {
+    display: none;
+  }
+
+  .services {
+    position: relative;
+    gap: 0;
+    & .service {
+      width: 100%;
+      text-align: left;
+      padding: 10px 0;
+      font-size: 34px;
+    }
+  }
+
+  .content-title {
+    text-align: left;
+    padding: 0 15px;
+  }
+
+  .header, 
+  .hero, 
+  .services, 
+  .video-container, 
+  .outsourcing, 
+  .contacts, 
+  .hero-img,
+  .advantages-container,
+  .partners {
+    padding: 0 15px;
+  }
+
+  .partners, .contacts {
+    margin: 60px 0 0 0;
+    height: fit-content;
+  }
+
+  .video-title, .partners-title, .contacts-title {
+    width: 100%;
+    & h1 {
+      justify-content: unset;
+    }
+    & p {
+      text-align: left;
+      margin: 0;
+      padding: 10px 0 20px 0;
+    }
+  }
+
+  .partners-carousel {
+    margin: 20px 0 0 0;
+    height: 100px;
+  }
+
+  .contacts-info {
+    padding: 20px 16px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    left: 0;
+    right: 0;
+    position: relative;
+    box-sizing: border-box;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+
+  .partners-carousel a img,
+  .partners-carousel .partners-track a img {
+    width: auto !important;
+    height: 60px !important;
+    object-fit: contain !important;
+    display: block;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    gap: 40px;
+  }
+
+  .left-side {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+
+  .footer-links {
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-contacts {
+    margin: 20px 0 0 0;
+    & p {
+      text-align: center;
+    }
+  }
+  
+  .footer-line {
+    position: static;
+    margin: 0 auto 20px auto;
+  }
+
+  .footer-privacy {
+    width: 100%;
+    text-align: center;
+    position: static;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    transform: unset;
+    & a {
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  .footer-contacts p {
+    font-size: 16px;
+  }
+  .top-side {
+    gap: 0;
+  }
+}
+
+@media (max-width: 641px) {
+  .contacts-info .info-p {
+    font-size: 34px;
+  }
+
+  .video-wrapper video {
+    height: 400px;
+  }
+}
+
+@media (max-width: 481px) {
+  .arrow svg {
+    width: 8px;
+    height: 8px;
+  }
+  .windowcleanhero {
+    height: 20vh;
+  }
+  .logo img {
+    width: 70px;
+    height: 70px;
+  }
+  .mobile-button {
+    width: 100%;
+    margin-bottom: 60px;
+    & p {
+      font-size: 12px;
+    }
+  }
+  .mobile-menu {
+    width: 50px;
+    height: 50px;
+    & svg {
+      width: 15px;
+      height: 10px;
+    }
+  }
+  .header {
+    margin-bottom: 35px;
+  }
+  .hero-preview {
+    font-size: 12px;
+    height: fit-content;
+  }
+  .hero-text {
+    gap: 10px;
+  }
+  .hero-title p {
+    font-size: 32px;
+  }
+  .content-title {
+    margin: 60px 0 0 0;
+  }
+  .advantages-container {
+    margin: 60px auto 20px auto;
+  }
+  .content-title p,
+  .partners-title p,
+  .contacts-title p {
+    font-size: 18px;
+  }
+  .content-title h1,
+  .advantage-text h2,
+  .video-title p,
+  .partners-title h1,
+  .contacts-title h1,
+  .info-item h1 {
+    font-size: 12px;
+  }
+  .advantage-image {
+    margin-top: 20px;
+    height: 150px;
+  }
+  .advantage-item {
+    margin-bottom: 20px;
+  }
+  .service, 
+  .info-item p {
+    font-size: 24px !important;
+  }
+
+  .dropdown-content {
+    height: 150px;
+  }
+
+  .video-container {
+    gap: 20px;
+  }
+  .partners-title, .contacts-title {
+    height: fit-content;
+  }
+
+  .video-wrapper video {
+    height: 150px;
+  }
+
+  .contacts-info {
+    gap: 20px;
+  }
+
+  .contacts-btn {
+    margin-bottom: 0;
+  }
+
+  .footer-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-privacy a {
+    font-size: 12px;
+  }
+
+  .footer-line {
+    width: 80vw;
+  }
+  
+
+}
