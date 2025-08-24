@@ -146,12 +146,12 @@ body {
     font-weight: 400;
     padding: 20px 0;
     position: relative;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease; 
 }
 
 .service.active {
     color: #000000;
-    font-style: italic;
+    font-style: italic; 
 }
 
 .service.active::after {
@@ -164,6 +164,7 @@ body {
     height: 1px;
     background-color: #CACACA;
     margin-top: 20px;
+    transition: opacity 0.3s ease;
 }
 .service-svg {
     position: absolute;
