@@ -807,12 +807,14 @@ body {
     animation: rotateStar 20s linear infinite;
     transform-origin: center;
     transform-box: fill-box;
+    cursor: pointer;
 }
 
 .services svg foreignObject,
 .contacts-button svg foreignObject, 
 .hero-label svg foreignObject {
     animation: none !important;
+    cursor: pointer;
 }
 
 @keyframes rotateStar {
