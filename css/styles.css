@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     background-color: #FBF9F5;
@@ -50,7 +54,8 @@ body {
 
 .right-number {
     cursor: pointer;
-    transition: all 0.4s ease; 
+    transition: all 0.4s ease;
+
     
      &:hover {
         color: #619CE9;
@@ -128,11 +133,6 @@ body {
     gap: 30px;
     width: 1300px;
     margin: 0 auto;
-    & svg {
-        position: absolute;
-        right: 0;
-        bottom: 25%;
-    }
 }
 
 .service {
@@ -146,6 +146,44 @@ body {
     font-weight: 400;
     padding: 20px 0;
     position: relative;
+    transition: all 0.3s ease;
+}
+
+.service.active {
+    color: #000000;
+    font-style: italic;
+}
+
+.service.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background-color: #CACACA;
+    margin-top: 20px;
+}
+.service-svg {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    pointer-events: none; 
+}
+
+.service-svg foreignObject {
+    pointer-events: auto;
+}
+
+.service-svg path {
+    animation: rotateStar 10s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.service-svg foreignObject {
+    animation: none !important;
 }
 
 .dropdown-content {
@@ -722,4 +760,66 @@ body {
   border-radius: 8px;
   width: 220px;
   text-align: center;
+}
+
+.header .right-number a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.header .right-number a:hover {
+    color: #619CE9 !important;
+    text-decoration: none !important;
+}
+
+.contacts-info .info-p a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.contacts-info .info-p a:hover {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.footer-contacts a {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+.footer-contacts a:hover {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+.mobile-side-menu .right-number a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.mobile-side-menu .right-number a:hover {
+    color: #619CE9 !important;
+    text-decoration: none !important;
+}
+.services svg path,
+.contacts-button svg path,
+.hero-label svg path {
+    animation: rotateStar 20s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.services svg foreignObject,
+.contacts-button svg foreignObject, 
+.hero-label svg foreignObject {
+    animation: none !important;
+}
+
+@keyframes rotateStar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
