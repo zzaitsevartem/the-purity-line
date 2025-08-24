@@ -293,15 +293,31 @@
 </footer>
     <script src="js/index.js"></script>
     
-<div class="modal-overlay"></div>
-<div class="modal-order">
-    <div class="modal-header">ЗАКАЗ УБОРКИ</div>
-    <div class="modal-content">
-        <label for="fio">ФИО</label>
-        <input type="text" id="fio" placeholder="__________">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-order" id="modalOrder">
+        <div class="modal-title">Форма заявки на уборку</div>
+        <div class="modal-subtitle">Оставьте контактные данные<br>и мы ответим в ближайшее время</div>
+        
+        <div class="input-group">
+            <input type="text" class="input-field" placeholder="Ваше ФИО">
+        </div>
+        
+        <div class="input-group">
+            <input type="text" class="input-field" placeholder="Номер телефона">
+        </div>
+        
+        <div class="input-group">
+            <input type="text" class="input-field" placeholder="Комментарий">
+        </div>
+        
+        <div class="button-container">
+            <button class="submit-btn">
+                <span>Оставить заявку</span>
+                <svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.88672 1.1123C6.88672 0.836162 6.66286 0.612304 6.38672 0.612304L1.88672 0.612305C1.61058 0.612304 1.38672 0.836162 1.38672 1.1123C1.38672 1.38845 1.61058 1.6123 1.88672 1.6123L5.88672 1.6123L5.88672 5.6123C5.88672 5.88845 6.11058 6.1123 6.38672 6.1123C6.66286 6.1123 6.88672 5.88845 6.88672 5.6123L6.88672 1.1123ZM0.386719 7.1123L0.740272 7.46586L6.74027 1.46586L6.38672 1.1123L6.03317 0.758751L0.0331654 6.75875L0.386719 7.1123Z" fill="white"/>
+                </svg>
+            </button>
+        </div>
     </div>
-    <div class="modal-footer">ЗАКАЗ УБОРКИ</div>
-</div>
-
 </body>
 </html>
