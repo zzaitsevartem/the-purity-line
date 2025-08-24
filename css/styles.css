@@ -113,7 +113,7 @@ body {
     background:
         linear-gradient(358.59deg, rgba(14, 65, 176, 0.064) 37.59%, rgba(0, 72, 150, 0.2) 105.46%),
         linear-gradient(90deg, rgba(0, 111, 255, 0.53) 0%, rgba(0, 111, 255, 0.53) 100%),
-        url("img/windowcleanhero.webp");
+        url(../img/windowcleanhero.webp);
     background-size: 100% 120%;
     background-repeat: no-repeat;
     width: 1300px;
